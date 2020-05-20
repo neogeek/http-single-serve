@@ -1,0 +1,29 @@
+{
+  "name": "http-single-serve",
+  "description": "HTTP server for use with single page applications.",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=12.0"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "mime-types": "2.1.27"
+  },
+  "keywords": [
+    "http",
+    "serve"
+  ],
+  "authors": [
+    {
+      "name": "Scott Doxey",
+      "email": "hello@scottdoxey.com",
+      "homepage": "http://scottdoxey.com/"
+    }
+  ],
+  "homepage": "https://github.com/neogeek/http-single-serve",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neogeek/http-single-serve.git"
+  }
+}
