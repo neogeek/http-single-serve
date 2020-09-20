@@ -6,11 +6,11 @@ const { contentType } = require('mime-types');
 
 const server = ({ port, root = 'dist/', entry = 'index.html' }) =>
     createServer((req, res) => {
-        let path = join(process.cwd(), root, entry);
-
-        if (req.url.match(/\.[a-z]+$/)) {
-            path = join(process.cwd(), root, req.url);
-        }
+        const path = join(
+            process.cwd(),
+            root,
+            req.url.match(/\.[a-z]+$/) ? req.url : entry
+        );
 
         if (existsSync(path)) {
             res.writeHead(200, { 'Content-Type': contentType(extname(path)) });
