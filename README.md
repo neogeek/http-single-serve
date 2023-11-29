@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This package has been deprecated in favor of the newer, more robust, [http-simple-serve](https://github.com/neogeek/http-simple-serve) package.
+
 # http-single-serve
 
 > ⚙️ HTTP server for use with single page applications.
